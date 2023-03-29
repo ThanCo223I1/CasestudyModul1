@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Đặt Hàng </title>
+</head>
+<style>
+    tr td input {
+        width: 200%;
+    }
+    div table tr td input button {
+        text-align: center;
+    }
+</style>
+<body>
+<div>
+    <table>
+        <h1>THÔNG TIN KHÁCH HÀNG</h1>
+        <tr>
+            <td>Họ và Tên:</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Số Điện Thoại:</td>
+            <td><input type="text" id="number"></td>
+        </tr>
+        <tr>
+            <td>Địa Chỉ:</td>
+            <td><input type="text" id="Address"></td>
+        </tr>
+        <tr>
+            <td>Số Lượng:</td>
+            <td><input type="number"id="num"></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button onclick="order()">Đặt Hàng</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+    function order() {
+        window.document.location.href = "Thanh Toan.html"
+    }
+</script>
+
+</body>
+</html>

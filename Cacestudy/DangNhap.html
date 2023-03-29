@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table border="1px" style="text-align: center">
+  <h2>Đăng Nhập Tài Khoản</h2>
+  <tr>
+    <td> Username: <input type="text" id="username"></td>
+  </tr>
+  <tr>
+    <td> Password: <input type="password" id="password"></td>
+  </tr>
+  <tr>
+    <td><button onclick="login()">Đăng nhập</button>
+      <button onclick="chuyenHuong()">Đăng ký</button></td>
+  </tr>
+</table>
+<script src="DangKiCuaHang.html"></script>
+<script>
+  function chuyenHuong(){
+    window.document.location.href = "DangKiCuaHang.html"
+  }
+  function login(){
+    let Username = document.getElementById("username").value;
+    let Password = document.getElementById("password").value;
+    if(Username ===""||Password ===""){
+      alert("Mời bạn đăng nhập lại")
+    }else {
+      alert("Đăng Nhập Thành Công")
+      window.document.location.href = "CuaHang.html"
+    }
+  }
+</script>
+</body>
+</html>

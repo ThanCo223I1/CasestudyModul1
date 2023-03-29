@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  tr td input {
+    width: 170%;
+  }
+</style>
+<body>
+
+<div>
+  <table>
+    <h1>THÔNG TIN THANH TOÁN</h1>
+    <tr>
+      <td>Họ và Tên:</td>
+      <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+      <td>Số Tài khoản:</td>
+      <td><input type="text" id="number"></td>
+    </tr>
+    <tr>
+      <td>Ngân Hàng:</td>
+      <td><input type="text" id="Address"></td>
+    </tr>
+    <tr>
+      <td>Số Tiền Thanh Toán:</td>
+      <td><input type="text"id="num"></td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <button onclick="paythebill()" id="pay"> Thanh Toán </button>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+<script>
+  function paythebill() {
+    let name = document.getElementById("name").value;
+    let accountNumber = document.getElementById("number").value;
+    let bank = document.getElementById("Address").value;
+    let pay = document.getElementById("num").value;
+    if(name === "" || accountNumber === "" || bank === "" || pay === ""){
+      alert("Thanh Toán Không Thành Công")
+    }else {
+      alert("Thanh Toán Thành Công")
+      window.document.location.href = "CuaHang.html"
+    }
+  }
+</script>
+</html>

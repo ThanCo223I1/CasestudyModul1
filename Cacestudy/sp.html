@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  class Mobile {
+    pin
+    messenger
+    listmessengerfrom
+    listmessengerto
+    status   // true: bat, false: tat
+
+    constructor(pin, messenger, listmessengerfrom, listmessengerto, status) {
+      this.pin = pin;
+      this.messenger = messenger;
+      this.listmessengerfrom = listmessengerfrom;
+      this.listmessengerto = listmessengerto;
+      this.status = status;
+    }
+
+    onOffMobile() {
+      if (this.status === true) { // dang bat
+        this.status = false;
+      } else {
+        this.status = true;
+      }
+    }
+
+    kiemTraBatTat() {
+      alert(this.status)
+    }
+
+    sacpindt() {
+      alert("dang sac pin");
+      this.pin = 100;
+      alert("da sac day:" + this.pin + "%");
+    }
+
+    soantinnhan(messenger) {
+      this.messenger = messenger;
+    }
+    getlistmessengerfrom(){
+
+    }
+    let listmessengerfrom.
+
+    // 2. viet them hanh dong
+  }
+
+  let mobile = new Mobile(" ", "", "", ""," ");
+
+
+  function batTat() {
+    mobile.onOffMobile()
+  }
+
+  function kiemtra() {
+    mobile.kiemTraBatTat()
+  }
+
+  // 3. goi hanh dong trong ham
+  let mobile = new Mobile(" "," "," "," "," ")
+  function sacpin() {
+    mobile.sacpindt()
+  }
+
+  function guitinnhan() {
+    let mess = document.getElementById("soantinnhan").innerHTML
+  }
+</script>
+</html>
